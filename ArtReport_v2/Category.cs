@@ -45,6 +45,26 @@ namespace ArtReport_v2
             return totalhrs;
         }
 
+        public string AddedArtworkSummary()
+        {
+            return artworks[artworks.Count - 1].ArtworkSummary();
+
+        }
+
+
+        public int CountArtworks()
+        {
+            int artworksCount = 0;
+
+            foreach (Artwork artwork in artworks)
+            {
+                artworksCount += 1;
+            }
+
+            return artworksCount;
+
+        }
+
 
         //methods- Courses
 
@@ -72,13 +92,20 @@ namespace ArtReport_v2
 
         }
 
-        public string AddedArtworkSummary()
+        public int CountCourses()
         {
-            return artworks[artworks.Count - 1].ArtworkSummary();
+            int courseCount = 0;
+
+            foreach (Course course in courses)
+            {
+                courseCount += 1;
+            }
+
+            return courseCount;
 
         }
 
-
+       
 
         //----------
 

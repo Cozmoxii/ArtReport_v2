@@ -52,6 +52,28 @@ namespace ArtReport_v2
 
         
 
+        //calculating cat percentage
+
+        //public float OverallCatPercentage()
+        //{
+
+        //    float overallPercent = 0;
+        //    float sumPercent = 0;
+        //    int catCount = 0;
+
+        //    foreach (Category category in categories)
+        //    {
+        //        if ()
+        //        {
+
+        //        }
+        //    }
+
+
+
+
+        //}
+
 
 
         public int FindIndexOfCat(string categorySearch)
