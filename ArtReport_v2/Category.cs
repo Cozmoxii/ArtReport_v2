@@ -47,7 +47,14 @@ namespace ArtReport_v2
 
         public string AddedArtworkSummary()
         {
-            return artworks[artworks.Count - 1].ArtworkSummary();
+            return "---Artwork---\n"+$"Category: {category}\n"+ artworks[artworks.Count - 1].ArtworkSummary();
+
+        }
+
+        public string AddedCourseSummary()
+        {
+
+            return "----Course----\n" + $"Category: {category}\n" + courses[courses.Count - 1].CourseSummary();
 
         }
 
@@ -84,13 +91,7 @@ namespace ArtReport_v2
 
             return totalhrs;
         }
-
-        public string AddedCourseSummary()
-        {
-
-            return "----Course----\n"+ $"Category: {category}\n" +courses[courses.Count - 1].CourseSummary();
-
-        }
+        
 
         public int CountCourses()
         {

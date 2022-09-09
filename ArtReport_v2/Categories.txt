@@ -1,1 +1,1 @@
-﻿Client,Fanart,Concept,Character,Fundamentals,Realism
+﻿Client,Fanart,Concept,Character,Fundamentals,Realism,Personal

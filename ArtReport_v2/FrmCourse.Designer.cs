@@ -29,6 +29,7 @@ namespace ArtReport_v2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCourse));
             this.lblAddC = new System.Windows.Forms.Label();
             this.lblCPlat = new System.Windows.Forms.Label();
             this.lblCName = new System.Windows.Forms.Label();
@@ -47,8 +48,10 @@ namespace ArtReport_v2
             this.btnCAdd = new System.Windows.Forms.Button();
             this.btnCClear = new System.Windows.Forms.Button();
             this.btnCHome = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudCTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCPercent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblAddC
@@ -63,24 +66,31 @@ namespace ArtReport_v2
             // lblCPlat
             // 
             this.lblCPlat.AutoSize = true;
+            this.lblCPlat.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblCPlat.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPlat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(128)))), ((int)(((byte)(135)))));
             this.lblCPlat.Location = new System.Drawing.Point(83, 121);
             this.lblCPlat.Name = "lblCPlat";
-            this.lblCPlat.Size = new System.Drawing.Size(48, 13);
+            this.lblCPlat.Size = new System.Drawing.Size(59, 15);
             this.lblCPlat.TabIndex = 1;
             this.lblCPlat.Text = "Platform:";
             // 
             // lblCName
             // 
             this.lblCName.AutoSize = true;
+            this.lblCName.BackColor = System.Drawing.Color.White;
+            this.lblCName.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(128)))), ((int)(((byte)(135)))));
             this.lblCName.Location = new System.Drawing.Point(83, 94);
             this.lblCName.Name = "lblCName";
-            this.lblCName.Size = new System.Drawing.Size(38, 13);
+            this.lblCName.Size = new System.Drawing.Size(45, 15);
             this.lblCName.TabIndex = 2;
             this.lblCName.Text = "Name:";
             // 
             // lblCCat
             // 
             this.lblCCat.AutoSize = true;
+            this.lblCCat.BackColor = System.Drawing.Color.White;
             this.lblCCat.Location = new System.Drawing.Point(83, 152);
             this.lblCCat.Name = "lblCCat";
             this.lblCCat.Size = new System.Drawing.Size(52, 13);
@@ -90,6 +100,7 @@ namespace ArtReport_v2
             // lblCTime
             // 
             this.lblCTime.AutoSize = true;
+            this.lblCTime.BackColor = System.Drawing.Color.White;
             this.lblCTime.Location = new System.Drawing.Point(83, 188);
             this.lblCTime.Name = "lblCTime";
             this.lblCTime.Size = new System.Drawing.Size(81, 13);
@@ -99,6 +110,7 @@ namespace ArtReport_v2
             // lblCPercent
             // 
             this.lblCPercent.AutoSize = true;
+            this.lblCPercent.BackColor = System.Drawing.Color.White;
             this.lblCPercent.Location = new System.Drawing.Point(83, 218);
             this.lblCPercent.Name = "lblCPercent";
             this.lblCPercent.Size = new System.Drawing.Size(117, 26);
@@ -108,6 +120,7 @@ namespace ArtReport_v2
             // lblCNts
             // 
             this.lblCNts.AutoSize = true;
+            this.lblCNts.BackColor = System.Drawing.Color.White;
             this.lblCNts.Location = new System.Drawing.Point(110, 264);
             this.lblCNts.Name = "lblCNts";
             this.lblCNts.Size = new System.Drawing.Size(38, 13);
@@ -169,6 +182,7 @@ namespace ArtReport_v2
             // lblCSumm
             // 
             this.lblCSumm.AutoSize = true;
+            this.lblCSumm.BackColor = System.Drawing.Color.White;
             this.lblCSumm.Location = new System.Drawing.Point(535, 78);
             this.lblCSumm.Name = "lblCSumm";
             this.lblCSumm.Size = new System.Drawing.Size(53, 13);
@@ -177,39 +191,54 @@ namespace ArtReport_v2
             // 
             // btnCAdd
             // 
+            this.btnCAdd.BackColor = System.Drawing.Color.White;
             this.btnCAdd.Location = new System.Drawing.Point(253, 350);
             this.btnCAdd.Name = "btnCAdd";
             this.btnCAdd.Size = new System.Drawing.Size(95, 30);
             this.btnCAdd.TabIndex = 16;
             this.btnCAdd.Text = "Add";
-            this.btnCAdd.UseVisualStyleBackColor = true;
+            this.btnCAdd.UseVisualStyleBackColor = false;
             this.btnCAdd.Click += new System.EventHandler(this.btnCAdd_Click);
             // 
             // btnCClear
             // 
+            this.btnCClear.BackColor = System.Drawing.Color.White;
             this.btnCClear.Location = new System.Drawing.Point(583, 350);
             this.btnCClear.Name = "btnCClear";
             this.btnCClear.Size = new System.Drawing.Size(83, 30);
             this.btnCClear.TabIndex = 17;
             this.btnCClear.Text = "Clear Form";
-            this.btnCClear.UseVisualStyleBackColor = true;
+            this.btnCClear.UseVisualStyleBackColor = false;
             this.btnCClear.Click += new System.EventHandler(this.btnCClear_Click);
             // 
             // btnCHome
             // 
+            this.btnCHome.BackColor = System.Drawing.Color.White;
             this.btnCHome.Location = new System.Drawing.Point(619, 27);
             this.btnCHome.Name = "btnCHome";
             this.btnCHome.Size = new System.Drawing.Size(101, 20);
             this.btnCHome.TabIndex = 18;
             this.btnCHome.Text = "Go Back to Home";
-            this.btnCHome.UseVisualStyleBackColor = true;
+            this.btnCHome.UseVisualStyleBackColor = false;
             this.btnCHome.Click += new System.EventHandler(this.btnCHome_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(70, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(666, 404);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmCourse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 490);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(802, 461);
             this.Controls.Add(this.btnCHome);
             this.Controls.Add(this.btnCClear);
             this.Controls.Add(this.btnCAdd);
@@ -228,10 +257,13 @@ namespace ArtReport_v2
             this.Controls.Add(this.lblCName);
             this.Controls.Add(this.lblCPlat);
             this.Controls.Add(this.lblAddC);
+            this.Controls.Add(this.pictureBox1);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "FrmCourse";
             this.Text = "FrmCourse";
             ((System.ComponentModel.ISupportInitialize)(this.nudCTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCPercent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,5 +289,6 @@ namespace ArtReport_v2
         private System.Windows.Forms.Button btnCAdd;
         private System.Windows.Forms.Button btnCClear;
         private System.Windows.Forms.Button btnCHome;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

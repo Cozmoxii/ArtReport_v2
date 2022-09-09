@@ -38,9 +38,8 @@ namespace ArtReport_v2
         //methods
 
         public string ArtworkSummary()
-        {
-            string summary = "-------Artwork summary-------\n" +
-                                $"Name: {artworkName}\n" +
+        {            
+            string summary = $"Name: {artworkName}\n" +
                                 $"Time Spent: {timeSpent} hrs\n" +
                                 $"Notes: {notes}";
             return summary;

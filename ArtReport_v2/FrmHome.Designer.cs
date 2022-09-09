@@ -68,6 +68,7 @@ namespace ArtReport_v2
             this.btnAll.TabIndex = 3;
             this.btnAll.Text = "See All Added";
             this.btnAll.UseVisualStyleBackColor = true;
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // lblProgress
             // 

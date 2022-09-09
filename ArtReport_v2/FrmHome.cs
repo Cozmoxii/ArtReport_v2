@@ -35,5 +35,13 @@ namespace ArtReport_v2
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
+
+        private void btnAll_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmSeeAll window = new FrmSeeAll(am);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
+        }
     }
 }
