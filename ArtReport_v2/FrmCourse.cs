@@ -55,5 +55,7 @@ namespace ArtReport_v2
             rtxCSumm.Text = "";
 
         }
+
+       
     }
 }

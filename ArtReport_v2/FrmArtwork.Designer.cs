@@ -29,6 +29,7 @@ namespace ArtReport_v2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmArtwork));
             this.btnAHome = new System.Windows.Forms.Button();
             this.btnAClear = new System.Windows.Forms.Button();
             this.btnCAdd = new System.Windows.Forms.Button();
@@ -47,50 +48,70 @@ namespace ArtReport_v2
             this.lblAddA = new System.Windows.Forms.Label();
             this.cbxAMed = new System.Windows.Forms.ComboBox();
             this.cbxAFile = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudATime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAHome
             // 
-            this.btnAHome.Location = new System.Drawing.Point(618, 49);
+            this.btnAHome.BackColor = System.Drawing.Color.White;
+            this.btnAHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAHome.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
+            this.btnAHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
+            this.btnAHome.Location = new System.Drawing.Point(644, 48);
             this.btnAHome.Name = "btnAHome";
-            this.btnAHome.Size = new System.Drawing.Size(101, 20);
+            this.btnAHome.Size = new System.Drawing.Size(56, 30);
             this.btnAHome.TabIndex = 36;
-            this.btnAHome.Text = "Go Back to Home";
-            this.btnAHome.UseVisualStyleBackColor = true;
+            this.btnAHome.Text = "Home";
+            this.btnAHome.UseVisualStyleBackColor = false;
             this.btnAHome.Click += new System.EventHandler(this.btnAHome_Click);
             // 
             // btnAClear
             // 
+            this.btnAClear.BackColor = System.Drawing.Color.White;
+            this.btnAClear.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnAClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAClear.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
+            this.btnAClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.btnAClear.Location = new System.Drawing.Point(582, 372);
             this.btnAClear.Name = "btnAClear";
             this.btnAClear.Size = new System.Drawing.Size(83, 30);
             this.btnAClear.TabIndex = 35;
             this.btnAClear.Text = "Clear Form";
-            this.btnAClear.UseVisualStyleBackColor = true;
+            this.btnAClear.UseVisualStyleBackColor = false;
             this.btnAClear.Click += new System.EventHandler(this.btnAClear_Click);
             // 
             // btnCAdd
             // 
+            this.btnCAdd.BackColor = System.Drawing.Color.White;
+            this.btnCAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCAdd.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
+            this.btnCAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.btnCAdd.Location = new System.Drawing.Point(252, 372);
             this.btnCAdd.Name = "btnCAdd";
             this.btnCAdd.Size = new System.Drawing.Size(95, 30);
             this.btnCAdd.TabIndex = 34;
             this.btnCAdd.Text = "Add";
-            this.btnCAdd.UseVisualStyleBackColor = true;
+            this.btnCAdd.UseVisualStyleBackColor = false;
             this.btnCAdd.Click += new System.EventHandler(this.btnCAdd_Click);
             // 
             // lblASumm
             // 
             this.lblASumm.AutoSize = true;
-            this.lblASumm.Location = new System.Drawing.Point(534, 100);
+            this.lblASumm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
+            this.lblASumm.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblASumm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
+            this.lblASumm.Location = new System.Drawing.Point(527, 97);
             this.lblASumm.Name = "lblASumm";
-            this.lblASumm.Size = new System.Drawing.Size(53, 13);
+            this.lblASumm.Size = new System.Drawing.Size(78, 16);
             this.lblASumm.TabIndex = 33;
             this.lblASumm.Text = "Summary:";
             // 
             // rtxASumm
             // 
+            this.rtxASumm.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
+            this.rtxASumm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.rtxASumm.Location = new System.Drawing.Point(451, 116);
             this.rtxASumm.Name = "rtxASumm";
             this.rtxASumm.Size = new System.Drawing.Size(214, 232);
@@ -99,6 +120,7 @@ namespace ArtReport_v2
             // 
             // rtxANts
             // 
+            this.rtxANts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.rtxANts.Location = new System.Drawing.Point(227, 266);
             this.rtxANts.Name = "rtxANts";
             this.rtxANts.Size = new System.Drawing.Size(122, 82);
@@ -107,6 +129,7 @@ namespace ArtReport_v2
             // 
             // nudATime
             // 
+            this.nudATime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.nudATime.Location = new System.Drawing.Point(227, 208);
             this.nudATime.Name = "nudATime";
             this.nudATime.Size = new System.Drawing.Size(120, 20);
@@ -114,14 +137,17 @@ namespace ArtReport_v2
             // 
             // cbxACat
             // 
+            this.cbxACat.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
+            this.cbxACat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.cbxACat.FormattingEnabled = true;
             this.cbxACat.Location = new System.Drawing.Point(226, 174);
             this.cbxACat.Name = "cbxACat";
-            this.cbxACat.Size = new System.Drawing.Size(121, 21);
+            this.cbxACat.Size = new System.Drawing.Size(121, 23);
             this.cbxACat.TabIndex = 28;
             // 
             // txbANme
             // 
+            this.txbANme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.txbANme.Location = new System.Drawing.Point(226, 116);
             this.txbANme.Name = "txbANme";
             this.txbANme.Size = new System.Drawing.Size(121, 20);
@@ -130,68 +156,90 @@ namespace ArtReport_v2
             // lblANts
             // 
             this.lblANts.AutoSize = true;
+            this.lblANts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
+            this.lblANts.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F);
+            this.lblANts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
             this.lblANts.Location = new System.Drawing.Point(109, 286);
             this.lblANts.Name = "lblANts";
-            this.lblANts.Size = new System.Drawing.Size(38, 13);
+            this.lblANts.Size = new System.Drawing.Size(56, 18);
             this.lblANts.TabIndex = 25;
             this.lblANts.Text = "Notes:";
             // 
             // lblAFile
             // 
             this.lblAFile.AutoSize = true;
+            this.lblAFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
+            this.lblAFile.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F);
+            this.lblAFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
             this.lblAFile.Location = new System.Drawing.Point(82, 240);
             this.lblAFile.Name = "lblAFile";
-            this.lblAFile.Size = new System.Drawing.Size(55, 13);
+            this.lblAFile.Size = new System.Drawing.Size(86, 18);
             this.lblAFile.TabIndex = 24;
             this.lblAFile.Text = "Image file:";
             // 
             // lblATime
             // 
             this.lblATime.AutoSize = true;
+            this.lblATime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
+            this.lblATime.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F);
+            this.lblATime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
             this.lblATime.Location = new System.Drawing.Point(82, 210);
             this.lblATime.Name = "lblATime";
-            this.lblATime.Size = new System.Drawing.Size(81, 13);
+            this.lblATime.Size = new System.Drawing.Size(124, 18);
             this.lblATime.TabIndex = 23;
             this.lblATime.Text = "Time Spent(hrs)";
             // 
             // lblACat
             // 
             this.lblACat.AutoSize = true;
+            this.lblACat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
+            this.lblACat.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F);
+            this.lblACat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
             this.lblACat.Location = new System.Drawing.Point(82, 174);
             this.lblACat.Name = "lblACat";
-            this.lblACat.Size = new System.Drawing.Size(52, 13);
+            this.lblACat.Size = new System.Drawing.Size(81, 18);
             this.lblACat.TabIndex = 22;
             this.lblACat.Text = "Category:";
             // 
             // lblCName
             // 
             this.lblCName.AutoSize = true;
+            this.lblCName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
+            this.lblCName.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F);
+            this.lblCName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
             this.lblCName.Location = new System.Drawing.Point(82, 116);
             this.lblCName.Name = "lblCName";
-            this.lblCName.Size = new System.Drawing.Size(38, 13);
+            this.lblCName.Size = new System.Drawing.Size(55, 18);
             this.lblCName.TabIndex = 21;
             this.lblCName.Text = "Name:";
             // 
             // lblAMed
             // 
             this.lblAMed.AutoSize = true;
+            this.lblAMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
+            this.lblAMed.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F);
+            this.lblAMed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
             this.lblAMed.Location = new System.Drawing.Point(82, 143);
             this.lblAMed.Name = "lblAMed";
-            this.lblAMed.Size = new System.Drawing.Size(44, 13);
+            this.lblAMed.Size = new System.Drawing.Size(67, 18);
             this.lblAMed.TabIndex = 20;
             this.lblAMed.Text = "Medium";
             // 
             // lblAddA
             // 
             this.lblAddA.AutoSize = true;
-            this.lblAddA.Location = new System.Drawing.Point(174, 57);
+            this.lblAddA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
+            this.lblAddA.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
+            this.lblAddA.Location = new System.Drawing.Point(127, 58);
             this.lblAddA.Name = "lblAddA";
-            this.lblAddA.Size = new System.Drawing.Size(101, 13);
+            this.lblAddA.Size = new System.Drawing.Size(195, 20);
             this.lblAddA.TabIndex = 19;
             this.lblAddA.Text = "Artwork Information:";
             // 
             // cbxAMed
             // 
+            this.cbxAMed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.cbxAMed.FormattingEnabled = true;
             this.cbxAMed.Items.AddRange(new object[] {
             "Digital",
@@ -209,17 +257,29 @@ namespace ArtReport_v2
             // 
             // cbxAFile
             // 
+            this.cbxAFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.cbxAFile.FormattingEnabled = true;
             this.cbxAFile.Location = new System.Drawing.Point(227, 234);
             this.cbxAFile.Name = "cbxAFile";
             this.cbxAFile.Size = new System.Drawing.Size(121, 21);
             this.cbxAFile.TabIndex = 38;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
+            this.pictureBox1.Location = new System.Drawing.Point(48, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(680, 407);
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmArtwork
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(783, 483);
             this.Controls.Add(this.cbxAFile);
             this.Controls.Add(this.cbxAMed);
             this.Controls.Add(this.btnAHome);
@@ -238,9 +298,11 @@ namespace ArtReport_v2
             this.Controls.Add(this.lblCName);
             this.Controls.Add(this.lblAMed);
             this.Controls.Add(this.lblAddA);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FrmArtwork";
             this.Text = "FrmArtwork";
             ((System.ComponentModel.ISupportInitialize)(this.nudATime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,5 +328,6 @@ namespace ArtReport_v2
         private System.Windows.Forms.Label lblAddA;
         private System.Windows.Forms.ComboBox cbxAMed;
         private System.Windows.Forms.ComboBox cbxAFile;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

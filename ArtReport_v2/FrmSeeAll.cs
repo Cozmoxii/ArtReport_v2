@@ -21,5 +21,15 @@ namespace ArtReport_v2
 
             InitializeComponent();
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmHome window = new FrmHome(am);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
+        }
     }
+
+
 }
