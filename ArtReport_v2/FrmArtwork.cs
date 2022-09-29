@@ -20,10 +20,16 @@ namespace ArtReport_v2
 
             InitializeComponent();
 
+            
+
             for (int categoryIndex = 0; categoryIndex < am.CountCategories(); categoryIndex++)
             {
                 cbxACat.Items.Add(am.GetCategory(categoryIndex));
             }
+
+            cbxACat.SelectedIndex = 0;
+
+            cbxAMed.SelectedIndex = 0;
         }
 
         private void btnAHome_Click(object sender, EventArgs e)

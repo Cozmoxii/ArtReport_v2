@@ -24,7 +24,9 @@ namespace ArtReport_v2
             {
                 cbxCCat.Items.Add(am.GetCategory(categoryIndex));
             }
-          
+
+            cbxCCat.SelectedIndex = 0;
+
         }
 
         private void btnCHome_Click(object sender, EventArgs e)
