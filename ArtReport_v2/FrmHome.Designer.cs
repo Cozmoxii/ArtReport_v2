@@ -38,7 +38,7 @@ namespace ArtReport_v2
             this.lblGoal = new System.Windows.Forms.Label();
             this.btnSumm = new System.Windows.Forms.Button();
             this.btnStat = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtxSumm = new System.Windows.Forms.RichTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -129,6 +129,7 @@ namespace ArtReport_v2
             this.btnSumm.TabIndex = 9;
             this.btnSumm.Text = "Progress Summary";
             this.btnSumm.UseVisualStyleBackColor = false;
+            this.btnSumm.Click += new System.EventHandler(this.btnSumm_Click);
             // 
             // btnStat
             // 
@@ -143,13 +144,13 @@ namespace ArtReport_v2
             this.btnStat.Text = "Category Statistics";
             this.btnStat.UseVisualStyleBackColor = false;
             // 
-            // richTextBox1
+            // rtxSumm
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(104, 308);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(557, 244);
-            this.richTextBox1.TabIndex = 11;
-            this.richTextBox1.Text = "";
+            this.rtxSumm.Location = new System.Drawing.Point(104, 308);
+            this.rtxSumm.Name = "rtxSumm";
+            this.rtxSumm.Size = new System.Drawing.Size(557, 244);
+            this.rtxSumm.TabIndex = 11;
+            this.rtxSumm.Text = "";
             // 
             // pictureBox2
             // 
@@ -167,7 +168,7 @@ namespace ArtReport_v2
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(755, 603);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtxSumm);
             this.Controls.Add(this.btnStat);
             this.Controls.Add(this.btnSumm);
             this.Controls.Add(this.lblGoal);
@@ -194,7 +195,7 @@ namespace ArtReport_v2
         private System.Windows.Forms.Label lblGoal;
         private System.Windows.Forms.Button btnSumm;
         private System.Windows.Forms.Button btnStat;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtxSumm;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -12,6 +12,9 @@ namespace ArtReport_v2
         private List<Category> categories = new List<Category>();
         private List<string> Categories = new List<string>();
 
+        int totalHours;
+        int totalPercent;
+
 
         public AppManager()
         {
@@ -52,28 +55,17 @@ namespace ArtReport_v2
 
         
 
-        //calculating cat percentage
+        public int TotalHoursCalc(string categroySearch)
+        {
+            totalHours += CatOverallHours(categroySearch);
 
-        //public float OverallCatPercentage()
-        //{
+            return totalHours;
+        }
 
-        //    float overallPercent = 0;
-        //    float sumPercent = 0;
-        //    int catCount = 0;
+        public string FinalSummary()
+        {
 
-        //    foreach (Category category in categories)
-        //    {
-        //        if ()
-        //        {
-
-        //        }
-        //    }
-
-
-
-
-        //}
-
+        }
 
 
         public int FindIndexOfCat(string categorySearch)
@@ -110,8 +102,8 @@ namespace ArtReport_v2
             return -1f;
         }
 
-       
 
+        //search for specified category and returns the number of hours
 
         public int CatOverallHours(string categorySearch)
         {
@@ -128,7 +120,7 @@ namespace ArtReport_v2
             return -1;
         }
 
-        //returns number of categories that 
+        //returns number of categories that are in the text file 
 
         public int CountCategories()
         {

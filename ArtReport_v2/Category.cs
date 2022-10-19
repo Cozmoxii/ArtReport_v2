@@ -51,12 +51,7 @@ namespace ArtReport_v2
 
         }
 
-        public string AddedCourseSummary()
-        {
-
-            return "----Course----\n" + $"Category: {category}\n" + courses[courses.Count - 1].CourseSummary();
-
-        }
+       
 
 
         public int CountArtworks()
@@ -91,8 +86,13 @@ namespace ArtReport_v2
 
             return totalhrs;
         }
-        
 
+        public string AddedCourseSummary()
+        {
+
+            return "----Course----\n" + $"Category: {category}\n" + courses[courses.Count - 1].CourseSummary();
+
+        }
         public int CountCourses()
         {
             int courseCount = 0;
@@ -108,7 +108,8 @@ namespace ArtReport_v2
 
        
 
-        //----------
+        //----------Methods-----------
+
 
         public float CalculateOverallPercent()
         {
@@ -123,21 +124,21 @@ namespace ArtReport_v2
             return overallPercent / 100;
         }
 
-        public string ProgressSummary()
-        {
-            string summary = $"Overall Course Percentage ={CalculateOverallPercent()}%\n"+
-                                $"Total Hours Spent on Courses = {CalculateCourseHours()} hrs\n" +
-                                $"Total Hours Spent on Artworks = {CalculateArtHours()} hrs\n" +
-                                $"Total Hours Overall = {CalculateArtHours()+CalculateCourseHours()} hrs";
-
-            return summary;
-        }
-
         public int CalculateOverallHours()
         {
             int overallHours = CalculateArtHours() + CalculateCourseHours();
 
             return overallHours;
+        }
+
+        public string ProgressSummary()
+        {
+            string summary = $"Overall Course Percentage ={CalculateOverallPercent()}%\n" +
+                                $"Total Hours Spent on Courses = {CalculateCourseHours()} hrs\n" +
+                                $"Total Hours Spent on Artworks = {CalculateArtHours()} hrs\n" +
+                                $"Total Hours Overall = {CalculateArtHours() + CalculateCourseHours()} hrs";
+
+            return summary;
         }
 
 

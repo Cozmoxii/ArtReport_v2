@@ -43,5 +43,12 @@ namespace ArtReport_v2
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
+
+
+
+        private void btnSumm_Click(object sender, EventArgs e)
+        {
+            rtxSumm.Text = am.
+        }
     }
 }
