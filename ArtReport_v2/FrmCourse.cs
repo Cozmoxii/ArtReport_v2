@@ -29,6 +29,8 @@ namespace ArtReport_v2
 
         }
 
+
+
         private void btnCHome_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -44,6 +46,8 @@ namespace ArtReport_v2
             am.AddCourse(cbxCCat.Text,newCourse);
 
             rtxCSumm.Text = am.AddedCourseSummary(cbxCCat.Text);
+
+
         }
 
         private void btnCClear_Click(object sender, EventArgs e)

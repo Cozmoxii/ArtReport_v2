@@ -45,10 +45,9 @@ namespace ArtReport_v2
         }
 
 
-
-        private void btnSumm_Click(object sender, EventArgs e)
-        {
-            rtxSumm.Text = am.
-        }
+        // private void btnSumm_Click(object sender, EventArgs e)
+        //{
+        //rtxSumm.Text = am.
+        //}
     }
 }

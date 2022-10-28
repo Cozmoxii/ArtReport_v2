@@ -12,9 +12,6 @@ namespace ArtReport_v2
         private List<Category> categories = new List<Category>();
         private List<string> Categories = new List<string>();
 
-        int totalHours;
-        int totalPercent;
-
 
         public AppManager()
         {
@@ -53,20 +50,6 @@ namespace ArtReport_v2
             return categories[FindIndexOfCat(categorySearch)].AddedArtworkSummary();
         }
 
-        
-
-        public int TotalHoursCalc(string categroySearch)
-        {
-            totalHours += CatOverallHours(categroySearch);
-
-            return totalHours;
-        }
-
-        public string FinalSummary()
-        {
-
-        }
-
 
         public int FindIndexOfCat(string categorySearch)
         {
@@ -86,6 +69,20 @@ namespace ArtReport_v2
 
         }
 
+    public int TotalHours()
+        {
+            int totalhours = 0;
+            foreach (Category category in categories)
+            {
+                totalhours = category.CalculateCourseHours();
+            }
+
+            return totalhours;
+        }
+
+
+
+
 
 
         //search for specified category and return it's overall percentage
@@ -104,21 +101,6 @@ namespace ArtReport_v2
 
 
         //search for specified category and returns the number of hours
-
-        public int CatOverallHours(string categorySearch)
-        {
-
-            foreach (Category category in categories)
-            {
-                if (category.GetCategory().Equals(categorySearch))
-                {
-                    return category.CalculateOverallHours();
-                }
-            }
-
-
-            return -1;
-        }
 
         //returns number of categories that are in the text file 
 

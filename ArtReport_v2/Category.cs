@@ -9,8 +9,8 @@ namespace ArtReport_v2
     public class Category
     {
         private List<Artwork> artworks = new List<Artwork>();
-
         private List<Course> courses = new List<Course>();
+
 
         //a collection of catergories 
 
@@ -33,26 +33,14 @@ namespace ArtReport_v2
             artworks.Add(newArtwork);
         }
 
-        public int CalculateArtHours()
-        {
-            int totalhrs = 0;
-
-            foreach (Artwork artwork in artworks)
-            {
-                totalhrs += artwork.GetTimeSpent();
-            }
-
-            return totalhrs;
-        }
+     
 
         public string AddedArtworkSummary()
         {
             return "---Artwork---\n"+$"Category: {category}\n"+ artworks[artworks.Count - 1].ArtworkSummary();
 
         }
-
-       
-
+    
 
         public int CountArtworks()
         {
@@ -124,24 +112,6 @@ namespace ArtReport_v2
             return overallPercent / 100;
         }
 
-        public int CalculateOverallHours()
-        {
-            int overallHours = CalculateArtHours() + CalculateCourseHours();
-
-            return overallHours;
-        }
-
-        public string ProgressSummary()
-        {
-            string summary = $"Overall Course Percentage ={CalculateOverallPercent()}%\n" +
-                                $"Total Hours Spent on Courses = {CalculateCourseHours()} hrs\n" +
-                                $"Total Hours Spent on Artworks = {CalculateArtHours()} hrs\n" +
-                                $"Total Hours Overall = {CalculateArtHours() + CalculateCourseHours()} hrs";
-
-            return summary;
-        }
-
-
 
 
         //getters and setters
@@ -150,5 +120,7 @@ namespace ArtReport_v2
         {
             return category;
         }
+
+
     }
 }

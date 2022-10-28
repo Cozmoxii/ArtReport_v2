@@ -30,10 +30,10 @@ namespace ArtReport_v2
             window.Show();
         }
 
-        private void rtxCourse_TextChanged(object sender, EventArgs e)
-        {
-            rtxCourse.Text = am.
-        }
+        //private void rtxCourse_TextChanged(object sender, EventArgs e)
+        //{
+            //rtxCourse.Text = am.
+        //}
     }
 
 

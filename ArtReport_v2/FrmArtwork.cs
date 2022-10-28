@@ -47,6 +47,8 @@ namespace ArtReport_v2
             am.AddArtwork(cbxACat.Text, newArtwork);
 
             rtxASumm.Text = am.AddedArtworkSummary(cbxACat.Text);
+
+
         }
 
         private void btnAClear_Click(object sender, EventArgs e)
