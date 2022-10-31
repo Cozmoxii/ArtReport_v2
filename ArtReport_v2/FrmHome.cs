@@ -44,6 +44,11 @@ namespace ArtReport_v2
             window.Show();
         }
 
+        private void btnSumm_Click(object sender, EventArgs e)
+        {
+            rtxSumm.Text= am.Summary();
+        }
+
 
         // private void btnSumm_Click(object sender, EventArgs e)
         //{

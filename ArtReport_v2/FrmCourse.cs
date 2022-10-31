@@ -29,8 +29,6 @@ namespace ArtReport_v2
 
         }
 
-
-
         private void btnCHome_Click(object sender, EventArgs e)
         {
             this.Hide();

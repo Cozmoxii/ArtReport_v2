@@ -69,16 +69,97 @@ namespace ArtReport_v2
 
         }
 
-    public int TotalHours()
+
+        //adds the total course hours to the total art hours to find a total
+
+        //public int TotalHours()
+        //{
+        //    int totalhours = 0;
+        //    foreach (Category category in categories)
+        //    {
+        //        totalhours += category.CalculateCourseHours() + category.CalculateArtHours();
+        //    }
+
+        //    return totalhours;
+        //}
+
+
+        //summary methods
+
+        public int CourseHours()
         {
-            int totalhours = 0;
+            int coursehours = 0;
+
             foreach (Category category in categories)
             {
-                totalhours += category.CalculateCourseHours() + category.CalculateArtHours();
+                coursehours += category.CalculateCourseHours();
             }
 
-            return totalhours;
+            return coursehours;
         }
+
+        public int ArtHours()
+        {
+            int arthours = 0;
+
+            foreach (Category category in categories)
+            {
+                arthours += category.CalculateArtHours();
+            }
+
+            return arthours;
+        }
+
+
+        public int CountArtworks()
+        {
+            int artworkCount = 0;
+
+            foreach (Category category in categories)
+            {
+                artworkCount += category.CountArtworks();
+            }
+
+            return artworkCount;
+        }
+
+        public int CountCourses()
+        {
+            int courseCount = 0;
+
+            foreach (Category category in categories)
+            {
+                courseCount += category.CountCourses();
+            }
+
+            return courseCount;
+        }
+
+        public float OverallPercentage()
+        {
+            float overallPercentage = 1;
+
+            foreach (Category category in categories)
+            {
+
+                overallPercentage *= category.CalculateOverallPercent()*100; 
+            }
+
+            return overallPercentage;
+        }
+
+        public string Summary()
+        {
+            string summary = "Total Hours = " + (ArtHours()+CourseHours())+" hrs"+
+                "\nHours Spent on Artworks = "+ ArtHours()+
+                 "\nHours Spent on Courses = " + CourseHours() +
+                 "\nCourse Percentage Completed ="+ OverallPercentage()+
+                "\n\nNumber of Artworks Added = " +CountArtworks()+
+                "\nNumber of Courses Added = "+CountCourses();
+
+            return summary;
+        }
+
 
 
         //search for specified category and return it's overall percentage

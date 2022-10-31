@@ -49,10 +49,9 @@ namespace ArtReport_v2
             this.btnArt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArt.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
             this.btnArt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
-            this.btnArt.Location = new System.Drawing.Point(348, 84);
-            this.btnArt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnArt.Location = new System.Drawing.Point(261, 68);
             this.btnArt.Name = "btnArt";
-            this.btnArt.Size = new System.Drawing.Size(105, 53);
+            this.btnArt.Size = new System.Drawing.Size(79, 43);
             this.btnArt.TabIndex = 1;
             this.btnArt.Text = "Add New Artwork";
             this.btnArt.UseVisualStyleBackColor = false;
@@ -64,10 +63,9 @@ namespace ArtReport_v2
             this.btnCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCourse.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
             this.btnCourse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
-            this.btnCourse.Location = new System.Drawing.Point(531, 84);
-            this.btnCourse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCourse.Location = new System.Drawing.Point(398, 68);
             this.btnCourse.Name = "btnCourse";
-            this.btnCourse.Size = new System.Drawing.Size(105, 53);
+            this.btnCourse.Size = new System.Drawing.Size(79, 43);
             this.btnCourse.TabIndex = 2;
             this.btnCourse.Text = "Add New Course";
             this.btnCourse.UseVisualStyleBackColor = false;
@@ -79,10 +77,9 @@ namespace ArtReport_v2
             this.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAll.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
             this.btnAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
-            this.btnAll.Location = new System.Drawing.Point(401, 144);
-            this.btnAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAll.Location = new System.Drawing.Point(301, 117);
             this.btnAll.Name = "btnAll";
-            this.btnAll.Size = new System.Drawing.Size(179, 33);
+            this.btnAll.Size = new System.Drawing.Size(134, 27);
             this.btnAll.TabIndex = 3;
             this.btnAll.Text = "See All Added";
             this.btnAll.UseVisualStyleBackColor = false;
@@ -94,8 +91,7 @@ namespace ArtReport_v2
             this.lblProgress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
             this.lblProgress.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProgress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
-            this.lblProgress.Location = new System.Drawing.Point(371, 36);
-            this.lblProgress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProgress.Location = new System.Drawing.Point(278, 29);
             this.lblProgress.Name = "lblProgress";
             this.lblProgress.Size = new System.Drawing.Size(188, 20);
             this.lblProgress.TabIndex = 6;
@@ -103,10 +99,9 @@ namespace ArtReport_v2
             // 
             // tbxGoal
             // 
-            this.tbxGoal.Location = new System.Drawing.Point(348, 263);
-            this.tbxGoal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxGoal.Location = new System.Drawing.Point(261, 214);
             this.tbxGoal.Name = "tbxGoal";
-            this.tbxGoal.Size = new System.Drawing.Size(287, 22);
+            this.tbxGoal.Size = new System.Drawing.Size(216, 20);
             this.tbxGoal.TabIndex = 7;
             // 
             // lblGoal
@@ -115,10 +110,9 @@ namespace ArtReport_v2
             this.lblGoal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
             this.lblGoal.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGoal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
-            this.lblGoal.Location = new System.Drawing.Point(431, 240);
-            this.lblGoal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGoal.Location = new System.Drawing.Point(323, 195);
             this.lblGoal.Name = "lblGoal";
-            this.lblGoal.Size = new System.Drawing.Size(100, 16);
+            this.lblGoal.Size = new System.Drawing.Size(101, 16);
             this.lblGoal.TabIndex = 8;
             this.lblGoal.Text = "Overall Goal:";
             this.lblGoal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -129,13 +123,13 @@ namespace ArtReport_v2
             this.btnSumm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSumm.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
             this.btnSumm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
-            this.btnSumm.Location = new System.Drawing.Point(348, 319);
-            this.btnSumm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSumm.Location = new System.Drawing.Point(261, 259);
             this.btnSumm.Name = "btnSumm";
-            this.btnSumm.Size = new System.Drawing.Size(105, 53);
+            this.btnSumm.Size = new System.Drawing.Size(79, 43);
             this.btnSumm.TabIndex = 9;
             this.btnSumm.Text = "Progress Summary";
             this.btnSumm.UseVisualStyleBackColor = false;
+            this.btnSumm.Click += new System.EventHandler(this.btnSumm_Click);
             // 
             // btnStat
             // 
@@ -143,40 +137,37 @@ namespace ArtReport_v2
             this.btnStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStat.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
             this.btnStat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
-            this.btnStat.Location = new System.Drawing.Point(531, 319);
-            this.btnStat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStat.Location = new System.Drawing.Point(398, 259);
             this.btnStat.Name = "btnStat";
-            this.btnStat.Size = new System.Drawing.Size(105, 53);
+            this.btnStat.Size = new System.Drawing.Size(79, 43);
             this.btnStat.TabIndex = 10;
             this.btnStat.Text = "Category Statistics";
             this.btnStat.UseVisualStyleBackColor = false;
             // 
             // rtxSumm
             // 
-            this.rtxSumm.Location = new System.Drawing.Point(139, 379);
-            this.rtxSumm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtxSumm.Location = new System.Drawing.Point(104, 308);
             this.rtxSumm.Name = "rtxSumm";
-            this.rtxSumm.Size = new System.Drawing.Size(741, 299);
+            this.rtxSumm.Size = new System.Drawing.Size(557, 244);
             this.rtxSumm.TabIndex = 11;
             this.rtxSumm.Text = "";
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
-            this.pictureBox2.Location = new System.Drawing.Point(117, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(88, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(792, 690);
+            this.pictureBox2.Size = new System.Drawing.Size(594, 561);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
             // FrmHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1007, 742);
+            this.ClientSize = new System.Drawing.Size(755, 603);
             this.Controls.Add(this.rtxSumm);
             this.Controls.Add(this.btnStat);
             this.Controls.Add(this.btnSumm);
@@ -187,7 +178,6 @@ namespace ArtReport_v2
             this.Controls.Add(this.btnCourse);
             this.Controls.Add(this.btnArt);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmHome";
             this.Text = "Home";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

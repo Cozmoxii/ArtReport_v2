@@ -63,6 +63,7 @@ namespace ArtReport_v2
             courses.Add(newCourse);
         }
 
+
         public int CalculateCourseHours()
         {
             int totalhrs = 0;
@@ -117,7 +118,6 @@ namespace ArtReport_v2
 
             foreach (Course course in courses)
             {
-
                 overallPercent *= course.GetPercentDone();
             }
 
