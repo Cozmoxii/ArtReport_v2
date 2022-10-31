@@ -75,6 +75,18 @@ namespace ArtReport_v2
             return totalhrs;
         }
 
+        public int CalculateArtHours()
+        {
+            int totalhrs = 0;
+
+            foreach (Artwork artwork in artworks)
+            {
+                totalhrs += artwork.GetTimeSpent();
+            }
+
+            return totalhrs;
+        }
+
         public string AddedCourseSummary()
         {
 

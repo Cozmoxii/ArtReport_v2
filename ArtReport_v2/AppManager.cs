@@ -74,15 +74,11 @@ namespace ArtReport_v2
             int totalhours = 0;
             foreach (Category category in categories)
             {
-                totalhours = category.CalculateCourseHours();
+                totalhours += category.CalculateCourseHours() + category.CalculateArtHours();
             }
 
             return totalhours;
         }
-
-
-
-
 
 
         //search for specified category and return it's overall percentage
