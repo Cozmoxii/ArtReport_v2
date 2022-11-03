@@ -52,7 +52,6 @@ namespace ArtReport_v2
         {
             txbCNme.Text = "";
             txbCPlat.Text = "";
-            cbxCCat.Text = "";
             nudCTime.Value = 0;
             nudCPercent.Value = 0;
             rtxCNts.Text = "";

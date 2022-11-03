@@ -20,6 +20,8 @@ namespace ArtReport_v2
             InitializeComponent();
         }
 
+        
+
         private void btnCourse_Click(object sender, EventArgs e)
         {
             this.Hide();

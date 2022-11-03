@@ -55,7 +55,6 @@ namespace ArtReport_v2
         {
             txbANme.Text = "";
             cbxAMed.Text = "";
-            cbxACat.Text = "";
             nudATime.Value = 0;
             cbxAFile.Text = "";
             rtxANts.Text = "";

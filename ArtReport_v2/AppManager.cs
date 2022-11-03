@@ -137,23 +137,29 @@ namespace ArtReport_v2
 
         public float OverallPercentage()
         {
-            float overallPercentage = 1;
+            float overallPercentage = 0;
 
-            foreach (Category category in categories)
+            if (CountCourses()>0)
             {
+                foreach (Category category in categories)
+                {
+                    overallPercentage += category.CalculateOverallPercent();
 
-                overallPercentage *= category.CalculateOverallPercent()*100; 
+                }
+
+                return overallPercentage / CountCourses();
             }
 
-            return overallPercentage;
+            return 0;
         }
 
         public string Summary()
         {
-            string summary = "Total Hours = " + (ArtHours()+CourseHours())+" hrs"+
+            string summary = "-----------SUMMARY------------" +
+                "\n\nTotal Hours = " + (ArtHours()+CourseHours())+" hrs"+
                 "\nHours Spent on Artworks = "+ ArtHours()+
                  "\nHours Spent on Courses = " + CourseHours() +
-                 "\nCourse Percentage Completed ="+ OverallPercentage()+
+                 "\nAverage Percentage Completed = "+ OverallPercentage()+"%"+
                 "\n\nNumber of Artworks Added = " +CountArtworks()+
                 "\nNumber of Courses Added = "+CountCourses();
 

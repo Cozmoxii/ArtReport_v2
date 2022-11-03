@@ -114,14 +114,15 @@ namespace ArtReport_v2
 
         public float CalculateOverallPercent()
         {
-            float overallPercent = 1;
+            float overallPercent = 0;
 
             foreach (Course course in courses)
             {
-                overallPercent *= course.GetPercentDone();
+                overallPercent += course.GetPercentDone();
             }
 
-            return overallPercent / 100;
+            return overallPercent;
+            //return (float)Math.Round(overallPercent / courses.Count, 2);
         }
 
 
