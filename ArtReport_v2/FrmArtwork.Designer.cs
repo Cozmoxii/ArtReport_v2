@@ -40,14 +40,12 @@ namespace ArtReport_v2
             this.cbxACat = new System.Windows.Forms.ComboBox();
             this.txbANme = new System.Windows.Forms.TextBox();
             this.lblANts = new System.Windows.Forms.Label();
-            this.lblAFile = new System.Windows.Forms.Label();
             this.lblATime = new System.Windows.Forms.Label();
             this.lblACat = new System.Windows.Forms.Label();
             this.lblCName = new System.Windows.Forms.Label();
             this.lblAMed = new System.Windows.Forms.Label();
             this.lblAddA = new System.Windows.Forms.Label();
             this.cbxAMed = new System.Windows.Forms.ComboBox();
-            this.cbxAFile = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudATime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -121,7 +119,7 @@ namespace ArtReport_v2
             // rtxANts
             // 
             this.rtxANts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
-            this.rtxANts.Location = new System.Drawing.Point(227, 266);
+            this.rtxANts.Location = new System.Drawing.Point(225, 247);
             this.rtxANts.Name = "rtxANts";
             this.rtxANts.Size = new System.Drawing.Size(122, 82);
             this.rtxANts.TabIndex = 31;
@@ -137,6 +135,7 @@ namespace ArtReport_v2
             // 
             // cbxACat
             // 
+            this.cbxACat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxACat.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
             this.cbxACat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.cbxACat.FormattingEnabled = true;
@@ -159,23 +158,11 @@ namespace ArtReport_v2
             this.lblANts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
             this.lblANts.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F);
             this.lblANts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
-            this.lblANts.Location = new System.Drawing.Point(109, 286);
+            this.lblANts.Location = new System.Drawing.Point(119, 247);
             this.lblANts.Name = "lblANts";
             this.lblANts.Size = new System.Drawing.Size(56, 18);
             this.lblANts.TabIndex = 25;
             this.lblANts.Text = "Notes:";
-            // 
-            // lblAFile
-            // 
-            this.lblAFile.AutoSize = true;
-            this.lblAFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
-            this.lblAFile.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F);
-            this.lblAFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
-            this.lblAFile.Location = new System.Drawing.Point(82, 240);
-            this.lblAFile.Name = "lblAFile";
-            this.lblAFile.Size = new System.Drawing.Size(86, 18);
-            this.lblAFile.TabIndex = 24;
-            this.lblAFile.Text = "Image file:";
             // 
             // lblATime
             // 
@@ -239,6 +226,7 @@ namespace ArtReport_v2
             // 
             // cbxAMed
             // 
+            this.cbxAMed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAMed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.cbxAMed.FormattingEnabled = true;
             this.cbxAMed.Items.AddRange(new object[] {
@@ -254,15 +242,6 @@ namespace ArtReport_v2
             this.cbxAMed.Name = "cbxAMed";
             this.cbxAMed.Size = new System.Drawing.Size(121, 21);
             this.cbxAMed.TabIndex = 37;
-            // 
-            // cbxAFile
-            // 
-            this.cbxAFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
-            this.cbxAFile.FormattingEnabled = true;
-            this.cbxAFile.Location = new System.Drawing.Point(227, 234);
-            this.cbxAFile.Name = "cbxAFile";
-            this.cbxAFile.Size = new System.Drawing.Size(121, 21);
-            this.cbxAFile.TabIndex = 38;
             // 
             // pictureBox1
             // 
@@ -280,7 +259,6 @@ namespace ArtReport_v2
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(783, 483);
-            this.Controls.Add(this.cbxAFile);
             this.Controls.Add(this.cbxAMed);
             this.Controls.Add(this.btnAHome);
             this.Controls.Add(this.btnAClear);
@@ -292,7 +270,6 @@ namespace ArtReport_v2
             this.Controls.Add(this.cbxACat);
             this.Controls.Add(this.txbANme);
             this.Controls.Add(this.lblANts);
-            this.Controls.Add(this.lblAFile);
             this.Controls.Add(this.lblATime);
             this.Controls.Add(this.lblACat);
             this.Controls.Add(this.lblCName);
@@ -320,14 +297,12 @@ namespace ArtReport_v2
         private System.Windows.Forms.ComboBox cbxACat;
         private System.Windows.Forms.TextBox txbANme;
         private System.Windows.Forms.Label lblANts;
-        private System.Windows.Forms.Label lblAFile;
         private System.Windows.Forms.Label lblATime;
         private System.Windows.Forms.Label lblACat;
         private System.Windows.Forms.Label lblCName;
         private System.Windows.Forms.Label lblAMed;
         private System.Windows.Forms.Label lblAddA;
         private System.Windows.Forms.ComboBox cbxAMed;
-        private System.Windows.Forms.ComboBox cbxAFile;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

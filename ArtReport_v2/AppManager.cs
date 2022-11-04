@@ -12,10 +12,13 @@ namespace ArtReport_v2
         private List<Category> categories = new List<Category>();
         private List<string> Categories = new List<string>();
 
+        private string goal;
 
         public AppManager()
         {
             LoadCategories();
+
+            goal = "";
 
             foreach (string category in Categories)
             {
@@ -25,6 +28,18 @@ namespace ArtReport_v2
 
 
         //methods
+
+
+        public void SetGoal(string goal)
+        {
+            this.goal = goal;
+        }
+
+        public string GetGoal()
+        {
+            return goal;
+        }
+
 
         //Artwork
         public void AddArtwork(string categorySearch, Artwork newArtwork)
@@ -70,22 +85,10 @@ namespace ArtReport_v2
         }
 
 
-        //adds the total course hours to the total art hours to find a total
-
-        //public int TotalHours()
-        //{
-        //    int totalhours = 0;
-        //    foreach (Category category in categories)
-        //    {
-        //        totalhours += category.CalculateCourseHours() + category.CalculateArtHours();
-        //    }
-
-        //    return totalhours;
-        //}
-
-
         //summary methods
 
+
+        //each value in list instead of total (list created at start of method)
         public int CourseHours()
         {
             int coursehours = 0;
@@ -153,6 +156,7 @@ namespace ArtReport_v2
             return 0;
         }
 
+        //returns string summary with all calculated values
         public string Summary()
         {
             string summary = "-----------SUMMARY------------" +
@@ -182,8 +186,6 @@ namespace ArtReport_v2
             return -1f;
         }
 
-
-        //search for specified category and returns the number of hours
 
         //returns number of categories that are in the text file 
 
@@ -218,8 +220,6 @@ namespace ArtReport_v2
             }
 
         }
-
-
         
     }
 }

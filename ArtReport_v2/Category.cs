@@ -25,6 +25,8 @@ namespace ArtReport_v2
         {
         }
 
+        
+        
         //methods -artwork
 
         //adds a new artwork to the collection
@@ -37,7 +39,7 @@ namespace ArtReport_v2
 
         public string AddedArtworkSummary()
         {
-            return "---Artwork---\n"+$"Category: {category}\n"+ artworks[artworks.Count - 1].ArtworkSummary();
+            return "-----------Artwork-----------\n" + $"Category: {category}\n"+ artworks[artworks.Count - 1].ArtworkSummary();
 
         }
     
@@ -55,6 +57,17 @@ namespace ArtReport_v2
 
         }
 
+        public int CalculateArtHours()
+        {
+            int totalhrs = 0;
+
+            foreach (Artwork artwork in artworks)
+            {
+                totalhrs += artwork.GetTimeSpent();
+            }
+
+            return totalhrs;
+        }
 
         //methods- Courses
 
@@ -76,22 +89,10 @@ namespace ArtReport_v2
             return totalhrs;
         }
 
-        public int CalculateArtHours()
-        {
-            int totalhrs = 0;
-
-            foreach (Artwork artwork in artworks)
-            {
-                totalhrs += artwork.GetTimeSpent();
-            }
-
-            return totalhrs;
-        }
-
         public string AddedCourseSummary()
         {
 
-            return "----Course----\n" + $"Category: {category}\n" + courses[courses.Count - 1].CourseSummary();
+            return "----------Course----------\n" + $"Category: {category}\n" + courses[courses.Count - 1].CourseSummary();
 
         }
         public int CountCourses()
@@ -108,10 +109,6 @@ namespace ArtReport_v2
         }
 
        
-
-        //----------Methods-----------
-
-
         public float CalculateOverallPercent()
         {
             float overallPercent = 0;
@@ -122,7 +119,6 @@ namespace ArtReport_v2
             }
 
             return overallPercent;
-            //return (float)Math.Round(overallPercent / courses.Count, 2);
         }
 
 

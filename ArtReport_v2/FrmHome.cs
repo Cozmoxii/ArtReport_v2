@@ -18,6 +18,8 @@ namespace ArtReport_v2
         {
             this.am = am;
             InitializeComponent();
+
+            tbxGoal.Text = am.GetGoal();
         }
 
         
@@ -49,6 +51,11 @@ namespace ArtReport_v2
         private void btnSumm_Click(object sender, EventArgs e)
         {
             rtxSumm.Text= am.Summary();
+        }
+
+        private void tbxGoal_TextChanged(object sender, EventArgs e)
+        {
+            am.SetGoal(tbxGoal.Text);
         }
 
 

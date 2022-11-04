@@ -142,7 +142,7 @@ namespace ArtReport_v2
             // 
             this.txbCNme.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
             this.txbCNme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
-            this.txbCNme.Location = new System.Drawing.Point(241, 94);
+            this.txbCNme.Location = new System.Drawing.Point(240, 94);
             this.txbCNme.Name = "txbCNme";
             this.txbCNme.Size = new System.Drawing.Size(121, 24);
             this.txbCNme.TabIndex = 7;
@@ -158,6 +158,8 @@ namespace ArtReport_v2
             // 
             // cbxCCat
             // 
+            this.cbxCCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxCCat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbxCCat.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxCCat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.cbxCCat.FormattingEnabled = true;

@@ -99,10 +99,13 @@ namespace ArtReport_v2
             // 
             // tbxGoal
             // 
+            this.tbxGoal.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
+            this.tbxGoal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.tbxGoal.Location = new System.Drawing.Point(196, 216);
             this.tbxGoal.Name = "tbxGoal";
-            this.tbxGoal.Size = new System.Drawing.Size(216, 20);
+            this.tbxGoal.Size = new System.Drawing.Size(216, 26);
             this.tbxGoal.TabIndex = 7;
+            this.tbxGoal.TextChanged += new System.EventHandler(this.tbxGoal_TextChanged);
             // 
             // lblGoal
             // 

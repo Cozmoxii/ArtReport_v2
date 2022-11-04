@@ -42,7 +42,7 @@ namespace ArtReport_v2
 
         private void btnCAdd_Click(object sender, EventArgs e)
         {
-            Artwork newArtwork = new Artwork(txbANme.Text, cbxAMed.Text, (int)nudATime.Value, rtxANts.Text, cbxAFile.Text);
+            Artwork newArtwork = new Artwork(txbANme.Text, cbxAMed.Text, (int)nudATime.Value, rtxANts.Text);
 
             am.AddArtwork(cbxACat.Text, newArtwork);
 
@@ -56,7 +56,6 @@ namespace ArtReport_v2
             txbANme.Text = "";
             cbxAMed.Text = "";
             nudATime.Value = 0;
-            cbxAFile.Text = "";
             rtxANts.Text = "";
             rtxASumm.Text = "";
         }
