@@ -102,7 +102,7 @@ namespace ArtReport_v2
             this.lblASumm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
             this.lblASumm.Location = new System.Drawing.Point(527, 97);
             this.lblASumm.Name = "lblASumm";
-            this.lblASumm.Size = new System.Drawing.Size(78, 16);
+            this.lblASumm.Size = new System.Drawing.Size(77, 16);
             this.lblASumm.TabIndex = 33;
             this.lblASumm.Text = "Summary:";
             // 
@@ -136,6 +136,7 @@ namespace ArtReport_v2
             // cbxACat
             // 
             this.cbxACat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxACat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbxACat.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
             this.cbxACat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.cbxACat.FormattingEnabled = true;
@@ -227,6 +228,7 @@ namespace ArtReport_v2
             // cbxAMed
             // 
             this.cbxAMed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxAMed.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbxAMed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.cbxAMed.FormattingEnabled = true;
             this.cbxAMed.Items.AddRange(new object[] {

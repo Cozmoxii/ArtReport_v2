@@ -26,7 +26,6 @@ namespace ArtReport_v2
             }
         }
 
-
         //methods
 
 
@@ -38,6 +37,11 @@ namespace ArtReport_v2
         public string GetGoal()
         {
             return goal;
+        }
+
+        public List<string> GetCategories()
+        {
+            return Categories;
         }
 
 
@@ -187,6 +191,33 @@ namespace ArtReport_v2
         }
 
 
+        public int CatOverallHours()
+        {
+            foreach (Category category in categories)
+            {
+                if (category.CalculateArtHours() + category.CalculateCourseHours() > 0)
+                {
+                    return category.CalculateArtHours() + category.CalculateCourseHours();
+                }                                   
+            }
+
+            return 0;
+        }
+
+
+        public List<int> CatListHours()
+        {
+            List<int> catHours = new List<int>();
+
+            foreach (Category category in categories)
+	        {
+                catHours.Add(CatOverallHours());
+	        }
+
+            return catHours;
+        }
+
+
         //returns number of categories that are in the text file 
 
         public int CountCategories()
@@ -198,6 +229,7 @@ namespace ArtReport_v2
         {
             return categories[categoryIndex].GetCategory();
         }
+
 
 
         //loads in my categories from the text file so they can be used within my program
@@ -221,5 +253,5 @@ namespace ArtReport_v2
 
         }
         
-    }
+     }
 }

@@ -58,6 +58,14 @@ namespace ArtReport_v2
             am.SetGoal(tbxGoal.Text);
         }
 
+        private void btnStat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmStats window = new FrmStats(am);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
+        }
+
 
         // private void btnSumm_Click(object sender, EventArgs e)
         //{

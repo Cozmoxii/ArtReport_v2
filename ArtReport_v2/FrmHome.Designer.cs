@@ -115,7 +115,7 @@ namespace ArtReport_v2
             this.lblGoal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
             this.lblGoal.Location = new System.Drawing.Point(258, 197);
             this.lblGoal.Name = "lblGoal";
-            this.lblGoal.Size = new System.Drawing.Size(101, 16);
+            this.lblGoal.Size = new System.Drawing.Size(100, 16);
             this.lblGoal.TabIndex = 8;
             this.lblGoal.Text = "Overall Goal:";
             this.lblGoal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -146,6 +146,7 @@ namespace ArtReport_v2
             this.btnStat.TabIndex = 10;
             this.btnStat.Text = "Category Statistics";
             this.btnStat.UseVisualStyleBackColor = false;
+            this.btnStat.Click += new System.EventHandler(this.btnStat_Click);
             // 
             // rtxSumm
             // 
