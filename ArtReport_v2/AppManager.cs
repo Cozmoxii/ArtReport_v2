@@ -39,11 +39,27 @@ namespace ArtReport_v2
             return goal;
         }
 
-        public List<string> GetCategories()
+        public List<Category> GetCategories()
         {
-            return Categories;
+            return categories;
         }
 
+
+        public List<string> CategoryNames()
+        {
+            List<string> catNames = new List<string>();
+
+            foreach (Category category in categories)
+            {
+                if (category.CalculateArtHours() + category.CalculateCourseHours() > 0)
+                {
+                    catNames.Add(category.GetCategory());
+                }
+                
+            }
+
+            return catNames;
+        }
 
         //Artwork
         public void AddArtwork(string categorySearch, Artwork newArtwork)
@@ -191,27 +207,18 @@ namespace ArtReport_v2
         }
 
 
-        public int CatOverallHours()
-        {
-            foreach (Category category in categories)
-            {
-                if (category.CalculateArtHours() + category.CalculateCourseHours() > 0)
-                {
-                    return category.CalculateArtHours() + category.CalculateCourseHours();
-                }                                   
-            }
-
-            return 0;
-        }
-
-
         public List<int> CatListHours()
         {
             List<int> catHours = new List<int>();
 
             foreach (Category category in categories)
 	        {
-                catHours.Add(CatOverallHours());
+
+                if (category.CalculateArtHours() + category.CalculateCourseHours() > 0)
+                {
+                    catHours.Add(category.CalculateArtHours() + category.CalculateCourseHours()); 
+                }
+                
 	        }
 
             return catHours;
