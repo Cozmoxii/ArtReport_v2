@@ -115,7 +115,7 @@ namespace ArtReport_v2
             this.lblGoal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
             this.lblGoal.Location = new System.Drawing.Point(258, 197);
             this.lblGoal.Name = "lblGoal";
-            this.lblGoal.Size = new System.Drawing.Size(100, 16);
+            this.lblGoal.Size = new System.Drawing.Size(101, 16);
             this.lblGoal.TabIndex = 8;
             this.lblGoal.Text = "Overall Goal:";
             this.lblGoal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -150,11 +150,13 @@ namespace ArtReport_v2
             // 
             // rtxSumm
             // 
+            this.rtxSumm.BackColor = System.Drawing.Color.White;
             this.rtxSumm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxSumm.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.rtxSumm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
             this.rtxSumm.Location = new System.Drawing.Point(184, 328);
             this.rtxSumm.Name = "rtxSumm";
+            this.rtxSumm.ReadOnly = true;
             this.rtxSumm.Size = new System.Drawing.Size(261, 225);
             this.rtxSumm.TabIndex = 11;
             this.rtxSumm.Text = "";

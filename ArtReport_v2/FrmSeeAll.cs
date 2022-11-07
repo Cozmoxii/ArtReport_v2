@@ -20,6 +20,10 @@ namespace ArtReport_v2
             this.am = am;
 
             InitializeComponent();
+
+            rtxCourses.Text = am.FinalCourseSummaries();
+
+            rtxArtworks.Text = am.FinalArtworkSummaries();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -30,10 +34,7 @@ namespace ArtReport_v2
             window.Show();
         }
 
-        //private void rtxCourse_TextChanged(object sender, EventArgs e)
-        //{
-            //rtxCourse.Text = am.
-        //}
+
     }
 
 

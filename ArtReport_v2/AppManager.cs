@@ -158,6 +158,19 @@ namespace ArtReport_v2
             return courseCount;
         }
 
+        public string FinalCourseSummaries()
+        {
+            string courseSumm = "";
+
+            foreach (Category category in categories)
+            {
+                courseSumm += category.CourseSummaries();
+            }
+
+            return courseSumm;
+        }
+
+
         public float OverallPercentage()
         {
             float overallPercentage = 0;
@@ -222,6 +235,22 @@ namespace ArtReport_v2
 	        }
 
             return catHours;
+        }
+
+
+        //putting all my artwork summaries in a string
+
+        public string FinalArtworkSummaries()
+        {
+            string artSumm = "";
+
+            foreach (Category category in categories)
+            {
+                artSumm += category.ArtworkSummaries();
+            }
+
+
+            return artSumm;
         }
 
 

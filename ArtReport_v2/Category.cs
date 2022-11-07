@@ -39,10 +39,24 @@ namespace ArtReport_v2
 
         public string AddedArtworkSummary()
         {
-            return "-----------Artwork-----------\n" + $"Category: {category}\n"+ artworks[artworks.Count - 1].ArtworkSummary();
+            return $"Category: {category}\n"+ artworks[artworks.Count - 1].ArtworkSummary();
 
         }
-    
+
+        public string ArtworkSummaries()
+        {
+            string artworkSumm = "";
+
+            foreach (Artwork artwork in artworks)
+            {
+                artworkSumm += AddedArtworkSummary() + "\n\n";
+            }
+
+            return artworkSumm;
+
+        }
+
+
 
         public int CountArtworks()
         {
@@ -91,10 +105,24 @@ namespace ArtReport_v2
 
         public string AddedCourseSummary()
         {
-
-            return "----------Course----------\n" + $"Category: {category}\n" + courses[courses.Count - 1].CourseSummary();
+            return $"Category: {category}\n" + courses[courses.Count - 1].CourseSummary();
 
         }
+
+
+        public string CourseSummaries()
+        {
+            string courseSumm = "";
+
+            foreach (Course course in courses)
+            {
+                courseSumm += AddedCourseSummary()+"\n\n";
+            }
+
+            return courseSumm;
+           
+        }
+
         public int CountCourses()
         {
             int courseCount = 0;

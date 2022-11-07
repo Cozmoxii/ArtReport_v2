@@ -197,11 +197,13 @@ namespace ArtReport_v2
             // 
             // rtxCSumm
             // 
+            this.rtxCSumm.BackColor = System.Drawing.Color.White;
             this.rtxCSumm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxCSumm.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.rtxCSumm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.rtxCSumm.Location = new System.Drawing.Point(452, 94);
             this.rtxCSumm.Name = "rtxCSumm";
+            this.rtxCSumm.ReadOnly = true;
             this.rtxCSumm.Size = new System.Drawing.Size(214, 232);
             this.rtxCSumm.TabIndex = 14;
             this.rtxCSumm.Text = "";
@@ -210,13 +212,13 @@ namespace ArtReport_v2
             // 
             this.lblCSumm.AutoSize = true;
             this.lblCSumm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
-            this.lblCSumm.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCSumm.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F, System.Drawing.FontStyle.Bold);
             this.lblCSumm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
-            this.lblCSumm.Location = new System.Drawing.Point(519, 75);
+            this.lblCSumm.Location = new System.Drawing.Point(487, 75);
             this.lblCSumm.Name = "lblCSumm";
-            this.lblCSumm.Size = new System.Drawing.Size(78, 16);
+            this.lblCSumm.Size = new System.Drawing.Size(144, 17);
             this.lblCSumm.TabIndex = 15;
-            this.lblCSumm.Text = "Summary:";
+            this.lblCSumm.Text = "Course Summary:";
             // 
             // btnCAdd
             // 

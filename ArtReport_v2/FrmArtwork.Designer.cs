@@ -100,18 +100,20 @@ namespace ArtReport_v2
             this.lblASumm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
             this.lblASumm.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold);
             this.lblASumm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
-            this.lblASumm.Location = new System.Drawing.Point(527, 97);
+            this.lblASumm.Location = new System.Drawing.Point(491, 97);
             this.lblASumm.Name = "lblASumm";
-            this.lblASumm.Size = new System.Drawing.Size(77, 16);
+            this.lblASumm.Size = new System.Drawing.Size(140, 16);
             this.lblASumm.TabIndex = 33;
-            this.lblASumm.Text = "Summary:";
+            this.lblASumm.Text = "Artwork Summary:";
             // 
             // rtxASumm
             // 
-            this.rtxASumm.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
+            this.rtxASumm.BackColor = System.Drawing.Color.White;
+            this.rtxASumm.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.rtxASumm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(115)))), ((int)(((byte)(43)))));
             this.rtxASumm.Location = new System.Drawing.Point(451, 116);
             this.rtxASumm.Name = "rtxASumm";
+            this.rtxASumm.ReadOnly = true;
             this.rtxASumm.Size = new System.Drawing.Size(214, 232);
             this.rtxASumm.TabIndex = 32;
             this.rtxASumm.Text = "";
@@ -217,13 +219,13 @@ namespace ArtReport_v2
             // 
             this.lblAddA.AutoSize = true;
             this.lblAddA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
-            this.lblAddA.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddA.Font = new System.Drawing.Font("Lucida Sans Unicode", 14F, System.Drawing.FontStyle.Bold);
             this.lblAddA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(141)))), ((int)(((byte)(169)))));
             this.lblAddA.Location = new System.Drawing.Point(127, 58);
             this.lblAddA.Name = "lblAddA";
-            this.lblAddA.Size = new System.Drawing.Size(195, 20);
+            this.lblAddA.Size = new System.Drawing.Size(195, 23);
             this.lblAddA.TabIndex = 19;
-            this.lblAddA.Text = "Artwork Information:";
+            this.lblAddA.Text = "Add New Artwork:";
             // 
             // cbxAMed
             // 
@@ -248,9 +250,9 @@ namespace ArtReport_v2
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(244)))));
-            this.pictureBox1.Location = new System.Drawing.Point(48, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(68, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(680, 407);
+            this.pictureBox1.Size = new System.Drawing.Size(660, 407);
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 

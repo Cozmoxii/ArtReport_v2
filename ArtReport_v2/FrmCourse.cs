@@ -59,6 +59,5 @@ namespace ArtReport_v2
 
         }
 
-       
     }
 }
