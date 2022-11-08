@@ -45,41 +45,24 @@ namespace ArtReport_v2
         }
 
 
-        public List<string> CategoryNames()
-        {
-            List<string> catNames = new List<string>();
-
-            foreach (Category category in categories)
-            {
-                if (category.CalculateArtHours() + category.CalculateCourseHours() > 0)
-                {
-                    catNames.Add(category.GetCategory());
-                }
-                
-            }
-
-            return catNames;
-        }
-
-        //Artwork
         public void AddArtwork(string categorySearch, Artwork newArtwork)
         {
             categories[FindIndexOfCat(categorySearch)].AddArtwork(newArtwork);
         }
 
 
-
-        //course
         public void AddCourse(string categorySearch, Course newCourse)
         {
             categories[FindIndexOfCat(categorySearch)].AddCourse(newCourse);
         }
 
+        //adds the category to the course summary
         public string AddedCourseSummary(string categorySearch)
         {
             return categories[FindIndexOfCat(categorySearch)].AddedCourseSummary();
         }
 
+        //adds the category to the artwork summary
         public string AddedArtworkSummary(string categorySearch)
         {
             return categories[FindIndexOfCat(categorySearch)].AddedArtworkSummary();
@@ -105,10 +88,8 @@ namespace ArtReport_v2
         }
 
 
-        //summary methods
 
-
-        //each value in list instead of total (list created at start of method)
+        //calculated the total hours spent on courses
         public int CourseHours()
         {
             int coursehours = 0;
@@ -121,6 +102,7 @@ namespace ArtReport_v2
             return coursehours;
         }
 
+        //calculated the total hours spent on art
         public int ArtHours()
         {
             int arthours = 0;
@@ -133,7 +115,7 @@ namespace ArtReport_v2
             return arthours;
         }
 
-
+        //counts the number of added artworks
         public int CountArtworks()
         {
             int artworkCount = 0;
@@ -146,6 +128,7 @@ namespace ArtReport_v2
             return artworkCount;
         }
 
+        //counts the number of added courses
         public int CountCourses()
         {
             int courseCount = 0;
@@ -158,19 +141,25 @@ namespace ArtReport_v2
             return courseCount;
         }
 
+        //puts all my course summaries into a string to be used in my see all form
         public string FinalCourseSummaries()
         {
             string courseSumm = "";
 
-            foreach (Category category in categories)
+            if (CountCourses()>0)
             {
-                courseSumm += category.CourseSummaries();
+                courseSumm += "------------------------\n";
+
+                foreach (Category category in categories)
+                {
+                    courseSumm += category.CourseSummaries();
+                }
             }
 
             return courseSumm;
         }
 
-
+        //calculated the average percentage completed across all categories
         public float OverallPercentage()
         {
             float overallPercentage = 0;
@@ -180,10 +169,9 @@ namespace ArtReport_v2
                 foreach (Category category in categories)
                 {
                     overallPercentage += category.CalculateOverallPercent();
-
                 }
 
-                return overallPercentage / CountCourses();
+                return (float)Math.Round(overallPercentage / CountCourses(),2);
             }
 
             return 0;
@@ -219,7 +207,7 @@ namespace ArtReport_v2
             return -1f;
         }
 
-
+        //puts all my total hours per category into a list for my graph
         public List<int> CatListHours()
         {
             List<int> catHours = new List<int>();
@@ -237,20 +225,42 @@ namespace ArtReport_v2
             return catHours;
         }
 
+        //puts all my category names into a list to use in my graph
+        public List<string> CategoryNames()
+        {
+            List<string> catNames = new List<string>();
+
+            foreach (Category category in categories)
+            {
+                if (category.CalculateArtHours() + category.CalculateCourseHours() > 0)
+                {
+                    catNames.Add(category.GetCategory());
+                }
+
+            }
+
+            return catNames;
+        }
 
         //putting all my artwork summaries in a string
 
         public string FinalArtworkSummaries()
         {
-            string artSumm = "";
 
-            foreach (Category category in categories)
+            string artSumm = "";
+            if (CountArtworks() > 0)
             {
-                artSumm += category.ArtworkSummaries();
+                artSumm += "------------------------\n";
+
+                foreach (Category category in categories)
+                {
+                    artSumm += category.ArtworkSummaries();
+                }
+
             }
 
-
             return artSumm;
+
         }
 
 

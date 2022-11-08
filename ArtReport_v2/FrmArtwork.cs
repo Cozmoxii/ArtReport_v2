@@ -18,9 +18,7 @@ namespace ArtReport_v2
         {
             this.am = am;
 
-            InitializeComponent();
-
-            
+            InitializeComponent();            
 
             for (int categoryIndex = 0; categoryIndex < am.CountCategories(); categoryIndex++)
             {

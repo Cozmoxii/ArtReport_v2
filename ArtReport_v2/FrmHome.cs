@@ -60,16 +60,23 @@ namespace ArtReport_v2
 
         private void btnStat_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmStats window = new FrmStats(am);
-            window.FormClosed += (s, args) => this.Close();
-            window.Show();
+            if (am.CourseHours() + am.ArtHours() <= 0)
+            { 
+                string message = "Please add hours for a course or artwork";
+                string title = "Error";
+                MessageBox.Show(message, title);
+            }
+            else
+            {
+                this.Hide();
+                FrmStats window = new FrmStats(am);
+                window.FormClosed += (s, args) => this.Close();
+                window.Show();
+            }
+                    
+
+
         }
 
-
-        // private void btnSumm_Click(object sender, EventArgs e)
-        //{
-        //rtxSumm.Text = am.
-        //}
     }
 }

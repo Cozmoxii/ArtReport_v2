@@ -37,8 +37,7 @@ namespace ArtReport_v2
             chtStats.Series[0].ChartType = SeriesChartType.Bar;
             chtStats.Series[0].IsValueShownAsLabel = true;
             chtStats.Series[0].Points.DataBindXY(x, y);
-            chtStats.Legends.Clear();
-            chtStats.Titles.Add("Number of Hours Spent in each Category:");
+            chtStats.Legends.Clear(); 
         }
 
         private void btnSHome_Click(object sender, EventArgs e)

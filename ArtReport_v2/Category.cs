@@ -49,13 +49,12 @@ namespace ArtReport_v2
 
             foreach (Artwork artwork in artworks)
             {
-                artworkSumm += AddedArtworkSummary() + "\n\n";
+                artworkSumm += AddedArtworkSummary() + "\n------------------------\n";
             }
 
             return artworkSumm;
 
         }
-
 
 
         public int CountArtworks()
@@ -116,7 +115,7 @@ namespace ArtReport_v2
 
             foreach (Course course in courses)
             {
-                courseSumm += AddedCourseSummary()+"\n\n";
+                courseSumm += AddedCourseSummary()+ "\n------------------------\n";
             }
 
             return courseSumm;
